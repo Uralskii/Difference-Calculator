@@ -10,6 +10,11 @@
   "license": "ISC",
   "type": "module",
   "bin": {
-    "gendiff" : "bin/gendiff.js"
+    "gendiff": "bin/gendiff.js"
+  },
+  "devDependencies": {
+    "eslint": "^8.44.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5"
   }
 }
