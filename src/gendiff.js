@@ -1,3 +1,4 @@
+import path from 'path';
 import _ from 'lodash';
 import fs from 'fs';
 
@@ -46,8 +47,8 @@ const resultOfDiff = (object) => {
 };
 
 const gendiff = (path1, path2) => {
-  const obj1 = JSON.parse(fs.readFileSync(path1, 'utf-8'));
-  const obj2 = JSON.parse(fs.readFileSync(path2, 'utf-8'));
+  const obj1 = JSON.parse(fs.readFileSync(path.resolve(path1), 'utf-8'));
+  const obj2 = JSON.parse(fs.readFileSync(path.resolve(path2), 'utf-8'));
   const compareAndSort = compareAndSortedKeys(obj1, obj2);
   const resultDiff = resultOfDiff(compareAndSort);
   return resultDiff;
