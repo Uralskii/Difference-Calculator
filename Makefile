@@ -1,5 +1,5 @@
 gendiff:
-	node bin/gendiff.js
+	node bin/index.js
 
 install-deps: 
 	npm ci
