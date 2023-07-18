@@ -54,4 +54,4 @@ const gendiff = (path1, path2) => {
   return resultDiff;
 };
 
-export default gendiff;
+export { compareAndSortedKeys, resultOfDiff, gendiff };
