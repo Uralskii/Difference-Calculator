@@ -10,7 +10,7 @@
   "license": "ISC",
   "type": "module",
   "bin": {
-    "gendiff": "src/gendiff.js"
+    "gendiff": "bin/index.js"
   },
   "devDependencies": {
     "eslint": "^8.44.0",
