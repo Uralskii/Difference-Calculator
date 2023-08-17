@@ -1,9 +1,9 @@
 import path from 'path';
 import fs from 'fs';
-import { compareAndSortedKeys, resultOfDiff } from '../formatters/plain.js';
+import { buildAstTree, diff } from '../formatters/plain.js';
 import parsedFile from '../parsers/parser.js';
 
-const gendiff = (path1, path2) => {
+const gendiff = (path1, path2, formatName = 'stylish') => {
   const data1 = path.resolve(process.cwd(), path1);
   const data2 = path.resolve(process.cwd(), path2);
 
@@ -16,9 +16,12 @@ const gendiff = (path1, path2) => {
   const obj1 = parsedFile(file1, extFile1);
   const obj2 = parsedFile(file2, extFile2);
 
-  const compareAndSort = compareAndSortedKeys(obj1, obj2);
-  const resultDiff = resultOfDiff(compareAndSort);
-  return resultDiff;
+  const compareAndSort = buildAstTree(obj1, obj2);
+  if (formatName) {
+    const resultDiff = diff(compareAndSort);
+    return resultDiff;
+  }
+  return compareAndSort;
 };
 
 export default gendiff;
