@@ -2,7 +2,10 @@ import _ from 'lodash';
 
 const stringify = (currentValue) => {
   if (!_.isObject(currentValue)) {
-    return `'${currentValue}'`;
+    if (typeof currentValue === 'string') {
+      return `'${currentValue}'`;
+    }
+    return currentValue;
   }
   return '[complex value]';
 };
