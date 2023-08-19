@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/Uralskii/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/Uralskii/frontend-project-46/actions)",
+  "description": "Difference Calculator",
   "main": "src/gendiff.js",
   "scripts": {
     "test": "npx jest"
