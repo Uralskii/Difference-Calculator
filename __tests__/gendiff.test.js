@@ -1,7 +1,7 @@
 import { fileURLToPath } from 'url';
 import fs from 'fs';
 import path from 'path';
-import { test, expect, beforeAll } from '@jest/globals';
+import { test, expect } from '@jest/globals';
 import gendiff from '../src/gendiff.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -9,18 +9,10 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const getFixturePath = (filename) => path.join(__dirname, '..', '__fixtures__', filename);
 const readFile = (filename) => fs.readFileSync(getFixturePath(filename), 'utf-8');
 
-let fileJson1;
-let fileJson2;
-
-let fileYml1;
-let fileYml2;
-
-beforeAll(() => {
-  fileJson1 = getFixturePath('file1.json');
-  fileJson2 = getFixturePath('file2.json');
-  fileYml1 = getFixturePath('file1.json');
-  fileYml2 = getFixturePath('file2.json');
-});
+const fileJson1 = getFixturePath('file1.json');
+const fileJson2 = getFixturePath('file2.json');
+const fileYml1 = getFixturePath('file1.yml');
+const fileYml2 = getFixturePath('file2.yml');
 
 test('genDiffJsonStylish', () => {
   const stylish = readFile('file1_test.txt');
