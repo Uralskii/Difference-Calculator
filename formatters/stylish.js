@@ -18,7 +18,7 @@ const stringify = (currentValue, depth) => {
   return ['{', ...lines, `${makeIndent(depth)}}`].join('\n');
 };
 
-const diffStylish = (tree) => {
+const diffFormatStylish = (tree) => {
   const iter = (array, depth) => {
     // eslint-disable-next-line array-callback-return, consistent-return
     const mapped = array.map((key) => {
@@ -46,4 +46,4 @@ const diffStylish = (tree) => {
   return `{\n${iter(tree, 1)}\n}`;
 };
 
-export default diffStylish;
+export default diffFormatStylish;

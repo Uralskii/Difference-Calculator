@@ -10,7 +10,7 @@ const stringify = (currentValue) => {
   return '[complex value]';
 };
 
-const diffPlain = (tree) => {
+const diffFormatPlain = (tree) => {
   const iter = (array, namePath) => {
     // eslint-disable-next-line array-callback-return, consistent-return
     const mapped = array.map((key) => {
@@ -31,9 +31,9 @@ const diffPlain = (tree) => {
         return iter(key.children, path);
       }
     });
-    return mapped.filter((el) => el !== '').join('\n');
+    return mapped.filter((elem) => elem !== '').join('\n');
   };
   return iter(tree, '');
 };
 
-export default diffPlain;
+export default diffFormatPlain;

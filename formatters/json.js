@@ -1,3 +1,3 @@
-const diffJson = (tree) => JSON.stringify(tree);
+const diffFormatJson = (tree) => JSON.stringify(tree);
 
-export default diffJson;
+export default diffFormatJson;

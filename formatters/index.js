@@ -1,15 +1,15 @@
-import diffJson from './json.js';
-import diffPlain from './plain.js';
-import diffStylish from './stylish.js';
+import diffFormatJson from './json.js';
+import diffFormatPlain from './plain.js';
+import diffFormatStylish from './stylish.js';
 
 const getOutputFormat = (tree, formatName) => {
   switch (formatName) {
     case 'stylish':
-      return diffStylish(tree);
+      return diffFormatStylish(tree);
     case 'plain':
-      return diffPlain(tree);
+      return diffFormatPlain(tree);
     case 'json':
-      return diffJson(tree);
+      return diffFormatJson(tree);
     default:
       throw new Error(`Unknown format '${formatName}'!`);
   }

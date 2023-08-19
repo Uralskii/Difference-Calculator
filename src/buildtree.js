@@ -2,9 +2,9 @@ import _ from 'lodash';
 
 const buildAstTree = (obj1, obj2) => {
   const uniqKeys = Object.keys({ ...obj1, ...obj2 });
-  const sorted = _.sortBy(uniqKeys);
+  const sortedKeys = _.sortBy(uniqKeys);
   // eslint-disable-next-line array-callback-return, consistent-return
-  return sorted.map((key) => {
+  return sortedKeys.map((key) => {
     if (!Object.hasOwn(obj1, key)) {
       return { name: key, value: obj2[key], status: 'added' };
     }
