@@ -52,6 +52,7 @@ $ gendiff -h
 
 # Syntax feature - You need to enter the path to the file
 
+# Run from root
 # Default Output Format - Stylish
 $ gendiff __fixtures__/file1.json __fixtures__/file2.json
 
