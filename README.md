@@ -50,15 +50,15 @@ $ make lint
 # Program help
 $ gendiff -h
 
-# Syntax Utility - gendiff --format format name path to file one path to file two
+# Syntax feature - You need to enter the path to the file
 
 # Default Output Format - Stylish
 $ gendiff __fixtures__/file1.json __fixtures__/file2.json
 
-# Default Output Format - Plain
+# Output Format - Plain
 $ gendiff --format plain __fixtures__/file1.json __fixtures__/file2.json
 
-# Default Output Format - JSON
+# Output Format - JSON
 $ gendiff --format json __fixtures__/file1.json __fixtures__/file2.json
 ```
 
