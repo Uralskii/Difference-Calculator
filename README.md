@@ -44,11 +44,36 @@ $ make test
 ```bash
 $ make lint
 ```
+## List Commands In Terminal
+
+```bash
+# Program help
+$ gendiff -h
+
+# Syntax Utility - gendiff --format path to file one path to file two
+
+# Default Output Format - Stylish
+$ gendiff __fixtures__/file1.json __fixtures__/file2.json
+
+# Default Output Format - Plain
+$ gendiff --format plain __fixtures__/file1.json __fixtures__/file2.json
+
+# Default Output Format - JSON
+$ gendiff --format json __fixtures__/file1.json __fixtures__/file2.json
+```
 
 ## Examples
 
+The utility works with flat and nested formats.
+
+**Format Stylish**
+
 <a href="https://asciinema.org/a/F2xkSVCP813wgXMni0StLw7t4" target="_blank"><img src="https://asciinema.org/a/F2xkSVCP813wgXMni0StLw7t4.svg" /></a>
 
+**Format Plain**
+
 <a href="https://asciinema.org/a/ZWLNylSkngFAdTG3Y42adHZiZ" target="_blank"><img src="https://asciinema.org/a/ZWLNylSkngFAdTG3Y42adHZiZ.svg" /></a>
+
+**Format JSON**
 
 <a href="https://asciinema.org/a/CCTfNDI59emgBA8ux9k5knHAb" target="_blank"><img src="https://asciinema.org/a/CCTfNDI59emgBA8ux9k5knHAb.svg" /></a>
