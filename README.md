@@ -14,9 +14,9 @@ This is a difference calculator - a program that determines the difference betwe
 
 **Data output format:**
 
-* **Stylish:** Output format in which each key has its own state.
-* **Plain:** Text output format. Each line describes a key change.
-* **JSON:** Structured output in JSON format.
+* :scroll:**Stylish:** Output format in which each key has its own state.
+* :books:**Plain:** Text output format. Each line describes a key change.
+* :zap:**JSON:** Structured output in JSON format.
 
 ## Requirements
 
@@ -69,12 +69,18 @@ The utility works with flat and nested formats.
 
 **Format Stylish** :zap:
 
+Output format in which each key has its own state.
+
 <a href="https://asciinema.org/a/F2xkSVCP813wgXMni0StLw7t4" target="_blank"><img src="https://asciinema.org/a/F2xkSVCP813wgXMni0StLw7t4.svg" /></a>
 
 **Format Plain** :scroll:
 
+Text output format. Each line describes a key change.
+
 <a href="https://asciinema.org/a/ZWLNylSkngFAdTG3Y42adHZiZ" target="_blank"><img src="https://asciinema.org/a/ZWLNylSkngFAdTG3Y42adHZiZ.svg" /></a>
 
 **Format JSON** :books:
+
+Structured output in JSON format.
 
 <a href="https://asciinema.org/a/CCTfNDI59emgBA8ux9k5knHAb" target="_blank"><img src="https://asciinema.org/a/CCTfNDI59emgBA8ux9k5knHAb.svg" /></a>
