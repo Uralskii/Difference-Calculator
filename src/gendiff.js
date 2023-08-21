@@ -1,6 +1,6 @@
 import parseFile from './parsers.js';
-import buildAstTree from './buildtree.js';
-import getOutputFormat from '../formatters/index.js';
+import buildAstTree from './buildAstTree.js';
+import getOutputFormat from './formatters/index.js';
 import readFile from './readFile.js';
 
 const genDiff = (pathToFile1, pathToFile2, formatName = 'stylish') => {

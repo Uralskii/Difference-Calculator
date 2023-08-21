@@ -20,7 +20,6 @@ const stringify = (currentValue, depth) => {
 
 const diffFormatStylish = (tree) => {
   const iter = (array, depth) => {
-    // eslint-disable-next-line array-callback-return, consistent-return
     const mapped = array.map((key) => {
       if (key.status === 'deleted') {
         return `${makeIndent(depth, markers.deleted)}${key.name}: ${stringify(key.value, depth)}`;
