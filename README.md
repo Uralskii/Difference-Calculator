@@ -7,12 +7,12 @@
 
 This is a difference calculator - a program that determines the difference between two data structures. The program can work with various data formats. The result of data comparison can be expressed in three formats.
 
-**Supported data formats**
+**Supported data formats:**
 
 - JSON
 - YML / YAMl
 
-**Data output format**
+**Data output format:**
 
 * **Stylish:** Output format in which each key has its own state.
 * **Plain:** Text output format. Each line describes a key change.
