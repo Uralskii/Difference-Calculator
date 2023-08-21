@@ -7,29 +7,35 @@
 
 This is a difference calculator - a program that determines the difference between two data structures. The program can work with various data formats. The result of data comparison can be expressed in three formats.
 
-### Installation
+## Requirements
+
+- Mac
+- Linux
+
+## Installation
 
 The utility has a basic set of commands for installation
 
 ```bash
-$ git@github.com:Uralskii/Difference-Calculator.git
+$ git clone git@github.com:Uralskii/Difference-Calculator.git
 $ make install
 $ npm link
 ```
 
-### Make Test
+## Run Test
 
 ```bash
 $ make test
 ```
 
-### Make Lint
+## Lint
 
 ```bash
 $ make lint
 ```
 
-### Format Stylish
+## Examples
+
 <a href="https://asciinema.org/a/F2xkSVCP813wgXMni0StLw7t4" target="_blank"><img src="https://asciinema.org/a/F2xkSVCP813wgXMni0StLw7t4.svg" /></a>
 
 ### Format Plain

@@ -8,6 +8,8 @@ const parseFile = (file, pathToFile) => {
       return JSON.parse(file);
     case '.yml':
       return yaml.load(file);
+    case '.yaml':
+      return yaml.load(file);
     default:
       throw new Error(`Unknown extension '${extFile}'!`);
   }
