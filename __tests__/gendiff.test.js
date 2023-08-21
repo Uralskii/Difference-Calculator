@@ -14,6 +14,12 @@ const fileJson2 = getFixturePath('file2.json');
 const fileYml1 = getFixturePath('file1.yml');
 const fileYml2 = getFixturePath('file2.yml');
 
+test('gendiffDefaultFormat', () => {
+  const stylish = readFile('file1_test.txt');
+  expect(gendiff(fileJson1, fileJson2)).toEqual(stylish);
+  expect(gendiff(fileYml1, fileYml2)).toEqual(stylish);
+});
+
 test('genDiffJsonStylish', () => {
   const stylish = readFile('file1_test.txt');
   expect(gendiff(fileJson1, fileJson2, 'stylish')).toEqual(stylish);
