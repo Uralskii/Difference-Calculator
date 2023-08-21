@@ -14,9 +14,9 @@ This is a difference calculator - a program that determines the difference betwe
 
 **Data output format:**
 
-* :scroll:**Stylish:** Output format in which each key has its own state.
-* :books:**Plain:** Text output format. Each line describes a key change.
-* :zap:**JSON:** Structured output in JSON format.
+* **:zap: Stylish:** Output format in which each key has its own state.
+* **:scroll: Plain:** Text output format. Each line describes a key change.
+* **:books: JSON:** Structured output in JSON format.
 
 ## Requirements
 
@@ -68,17 +68,14 @@ $ gendiff --format json __fixtures__/file1.json __fixtures__/file2.json
 The utility works with flat and nested formats.
 
 **Format Stylish** :zap:
-
 Output format in which each key has its own state.
 
 <a href="https://asciinema.org/a/F2xkSVCP813wgXMni0StLw7t4" target="_blank"><img src="https://asciinema.org/a/F2xkSVCP813wgXMni0StLw7t4.svg" /></a>
 
 **Format Plain** :scroll:
-
 Text output format. Each line describes a key change.
 
 <a href="https://asciinema.org/a/ZWLNylSkngFAdTG3Y42adHZiZ" target="_blank"><img src="https://asciinema.org/a/ZWLNylSkngFAdTG3Y42adHZiZ.svg" /></a>
-
 **Format JSON** :books:
 
 Structured output in JSON format.
