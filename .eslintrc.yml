@@ -12,12 +12,6 @@ rules: {
   no-console: [
     0
   ],
-  array-callback-return: [
-    "off"
-  ],
-  consistent-return: [
-    "off"
-  ],
   no-underscore-dangle: [
     2, { "allow": ["__filename", "__dirname"] }
   ],

@@ -30,6 +30,7 @@ const diffFormatPlain = (tree) => {
         const path = `${namePath}${key.name}.`;
         return iter(key.children, path);
       }
+      return '';
     });
     return mapped.filter((elem) => elem !== '').join('\n');
   };

@@ -39,6 +39,7 @@ const diffFormatStylish = (tree) => {
       if (key.status === 'nested') {
         return `${makeIndent(depth)}${key.name}: {\n${iter(key.children, depth + 1)}\n${makeIndent(depth)}}`;
       }
+      return '';
     });
     return mapped.join('\n');
   };
