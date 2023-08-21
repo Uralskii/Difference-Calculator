@@ -76,8 +76,8 @@ Output format in which each key has its own state.
 Text output format. Each line describes a key change.
 
 <a href="https://asciinema.org/a/ZWLNylSkngFAdTG3Y42adHZiZ" target="_blank"><img src="https://asciinema.org/a/ZWLNylSkngFAdTG3Y42adHZiZ.svg" /></a>
-**Format JSON** :books:
 
+**Format JSON** :books:
 Structured output in JSON format.
 
 <a href="https://asciinema.org/a/CCTfNDI59emgBA8ux9k5knHAb" target="_blank"><img src="https://asciinema.org/a/CCTfNDI59emgBA8ux9k5knHAb.svg" /></a>
