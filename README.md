@@ -1,4 +1,4 @@
-# Difference Calculator
+# Difference Calculator :calling:
 
 [![Actions Status](https://github.com/Uralskii/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/Uralskii/frontend-project-46/actions)
 <a href="https://codeclimate.com/github/Uralskii/frontend-project-46/maintainability"><img src="https://api.codeclimate.com/v1/badges/b4ffa0e95fbe2a731ca2/maintainability" /></a>
@@ -67,14 +67,14 @@ $ gendiff --format json __fixtures__/file1.json __fixtures__/file2.json
 
 The utility works with flat and nested formats.
 
-**Format Stylish**
+**Format Stylish** :zap:
 
 <a href="https://asciinema.org/a/F2xkSVCP813wgXMni0StLw7t4" target="_blank"><img src="https://asciinema.org/a/F2xkSVCP813wgXMni0StLw7t4.svg" /></a>
 
-**Format Plain**
+**Format Plain** :scroll:
 
 <a href="https://asciinema.org/a/ZWLNylSkngFAdTG3Y42adHZiZ" target="_blank"><img src="https://asciinema.org/a/ZWLNylSkngFAdTG3Y42adHZiZ.svg" /></a>
 
-**Format JSON**
+**Format JSON** :books:
 
 <a href="https://asciinema.org/a/CCTfNDI59emgBA8ux9k5knHAb" target="_blank"><img src="https://asciinema.org/a/CCTfNDI59emgBA8ux9k5knHAb.svg" /></a>
